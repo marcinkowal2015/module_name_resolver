@@ -1,0 +1,20 @@
+{
+  "name": "module_name_resolver",
+  "version": "0.0.1",
+  "description": "Resolver of TypeScript module names",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "strip-json-comments": "^3.0.1"
+  },
+  "bin": {"mnr": "./bin/mnr.js"}
+}
