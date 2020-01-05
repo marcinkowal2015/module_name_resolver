@@ -2,9 +2,10 @@
   "name": "module-name-resolver",
   "version": "0.0.2",
   "description": "Resolver of TypeScript module names",
-  "main": "build/index.js",
+  "main": "src/build/index.js",
+  "types": "src/build/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
