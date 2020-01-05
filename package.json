@@ -7,8 +7,12 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Marcin Kowal",
+    "email": "marcinkowal2015@outlook.com",
+    "url": "https://marcinkowal.dev"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^13.1.2",
     "@types/yargs": "^13.0.4",
