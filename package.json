@@ -1,6 +1,6 @@
 {
   "name": "module-name-resolver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Resolver of TypeScript module names",
   "main": "src/build/index.js",
   "types": "src/build/index.js",
