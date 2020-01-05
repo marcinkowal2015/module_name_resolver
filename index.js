@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = require("fs");
 var path_1 = require("path");
+var yargs_1 = require("yargs");
 var stripComments = require("strip-json-comments");
 function findTsConfigDirectory(path) {
     var currentDirContent = fs_1.readdirSync(path);
@@ -38,3 +39,15 @@ function getModuleName(modulePath) {
     return moduleName;
 }
 exports.getModuleName = getModuleName;
+function resolveModuleName() {
+    if (yargs_1.argv._[0]) {
+        console.log(getModuleName(yargs_1.argv._[0]));
+    }
+    else if (yargs_1.argv.file) {
+        console.log(getModuleName(yargs_1.argv.file));
+    }
+    else {
+        console.log(modulesInCurrentDirectory());
+    }
+}
+exports.resolveModuleName = resolveModuleName;

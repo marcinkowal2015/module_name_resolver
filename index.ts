@@ -1,5 +1,6 @@
 import {readdirSync, readFileSync} from "fs";
 import {join as joinPath, extname, relative, sep, dirname} from "path";
+import {argv} from "yargs";
 
 const stripComments = require("strip-json-comments");
 
@@ -40,4 +41,14 @@ export function getModuleName(modulePath: string) {
         .split(sep).join("/");
 
     return moduleName;
+}
+
+export function resolveModuleName() {
+    if(argv._[0]) {
+        console.log(getModuleName(argv._[0]));
+    } else if(argv.file) {
+        console.log(getModuleName(argv.file as string));
+    } else {
+        console.log(modulesInCurrentDirectory());
+    }
 }

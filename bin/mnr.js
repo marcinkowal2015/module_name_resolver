@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('../index.js').modulesInCurrentDirectory();
+require('../index.js').resolveModuleName();

@@ -11,10 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^13.1.2",
+    "@types/yargs": "^13.0.4",
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "strip-json-comments": "^3.0.1"
+    "strip-json-comments": "^3.0.1",
+    "yargs": "^15.1.0"
   },
-  "bin": {"mnr": "./bin/mnr.js"}
+  "bin": {
+    "mnr": "./bin/mnr.js"
+  }
 }
