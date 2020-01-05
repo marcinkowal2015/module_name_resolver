@@ -1,5 +1,5 @@
 {
-  "name": "@marcinkowal2015/module-name-resolver",
+  "name": "module-name-resolver",
   "version": "0.0.1",
   "description": "Resolver of TypeScript module names",
   "main": "build/index.js",
